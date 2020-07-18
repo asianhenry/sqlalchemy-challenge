@@ -33,12 +33,13 @@ def welcome():
     """List all available api routes."""
     
     return (
-        f"Welcome to the Hawaii Climate API<br/>"
+        f"Welcome to the Hawaii Climate API<br/><br/>"
         f"Available Routes:<br/>"
-        f"/api/v1.0/precipitation<br/>"
-        f"/api/v1.0/stations<br/>"
-        f"/api/v1.0/tobs<br/>"
-        f"/api/v1.0/<start> and /api/v1.0/<start>/<end>"
+        f"Precipitation Data: /api/v1.0/precipitation<br/>"
+        f"Stations Data: /api/v1.0/stations<br/>"
+        f"Most Active Station Temperature Data: /api/v1.0/tobs<br/>"
+        f"Temperature Data from Start Date (yyyy-mm-dd): /api/v1.0/start<br/>"
+        f"Temperature Data from Start to End Date (yyyy-mm-dd): /api/v1.0/start/end"
     )
 
 # Convert the query results to a dictionary using date as the key and prcp as the value.
